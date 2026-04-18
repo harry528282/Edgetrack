@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EdgeVantage — Terms of Use</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23080c12'/%3E%3Crect width='32' height='32' rx='6' fill='none' stroke='%2300d4ff' stroke-width='1.5'/%3E%3Ccircle cx='16' cy='16' r='4' fill='%2300d4ff'/%3E%3C/svg%3E">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg:#080c12;
+  --bg2:#131c2b;
+  --bg3:#1a2538;
+  --bg4:#202e42;
+  --border:#233044;
+  --border2:#2d3f58;
+  --text:#e8edf5;
+  --muted:#5a6a82;
+  --muted2:#8899b0;
+  --accent:#00d4ff;
+  --green:#00e5a0;
+  --red:#ff4466;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;padding:24px;}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1);}50%{opacity:.6;transform:scale(.85);}}
+header{position:fixed;top:0;left:0;right:0;height:60px;background:rgba(8,12,18,0.97);backdrop-filter:blur(16px);border-bottom:1px solid var(--border);display:flex;align-items:center;padding:0 28px;z-index:100;}
+.logo{font-family:'Syne',sans-serif;font-size:18px;font-weight:800;letter-spacing:-0.5px;display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--text);}
+.logo-dot{width:8px;height:8px;border-radius:50%;background:var(--accent);box-shadow:0 0 8px var(--accent);animation:pulse 2s infinite;}
+.container{width:100%;max-width:720px;margin:72px auto 0;padding-bottom:64px;}
+.card{background:var(--bg2);border:1px solid var(--border);border-radius:14px;overflow:hidden;box-shadow:0 8px 40px rgba(0,0,0,.5);padding:40px 44px;}
+h1{font-family:'Syne',sans-serif;font-size:28px;font-weight:800;margin-bottom:6px;letter-spacing:-.5px;}
+.updated{font-size:11px;letter-spacing:1px;text-transform:uppercase;color:var(--muted);font-weight:600;margin-bottom:28px;}
+h2{font-family:'Syne',sans-serif;font-size:15px;font-weight:700;margin-top:28px;margin-bottom:10px;color:var(--accent);letter-spacing:.3px;}
+h2:first-of-type{margin-top:0;}
+p{font-size:13.5px;color:var(--muted2);line-height:1.75;margin-bottom:12px;}
+ul{list-style:none;margin-bottom:12px;}
+ul li{font-size:13.5px;color:var(--muted2);line-height:1.75;padding-left:18px;position:relative;margin-bottom:6px;}
+ul li::before{content:'';position:absolute;left:0;top:10px;width:6px;height:6px;border-radius:50%;background:var(--accent);opacity:.5;}
+strong{color:var(--text);font-weight:600;}
+a{color:var(--accent);text-decoration:none;}
+a:hover{text-decoration:underline;}
+.callout{background:rgba(255,68,102,.06);border:1px solid rgba(255,68,102,.22);border-radius:8px;padding:16px 18px;margin:20px 0;}
+.callout p{color:var(--text);margin-bottom:0;font-size:13px;}
+.callout strong{color:var(--red);}
+.back-link{display:inline-flex;align-items:center;gap:6px;font-size:12px;color:var(--muted2);margin-top:32px;padding-top:24px;border-top:1px solid var(--border);text-decoration:none;}
+.back-link:hover{color:var(--accent);}
+@media (max-width:640px){
+  .card{padding:28px 24px;}
+  h1{font-size:24px;}
+}
+</style>
+</head>
+<body>
+<header>
+  <a href="onboarding.html" class="logo"><span class="logo-dot"></span>EdgeVantage</a>
+</header>
+<div class="container">
+  <div class="card">
+    <h1>Terms of Use</h1>
+    <div class="updated">Last updated: April 18, 2026</div>
+
+    <p>These terms govern your use of EdgeVantage, a trading analytics dashboard that reads your Notion trade journal and renders performance metrics. By connecting your Notion workspace to EdgeVantage, you agree to the terms below.</p>
+
+    <div class="callout">
+      <p><strong>Not financial advice.</strong> EdgeVantage is an analytics tool, not an investment service. Nothing shown in the dashboard — no metric, chart, filter, or suggestion — is a recommendation to buy, sell, hold, or size any trade. All trading decisions are yours alone.</p>
+    </div>
+
+    <h2>The service</h2>
+    <p>EdgeVantage reads trade journal entries you have recorded in Notion and computes summary statistics — win rate, R multiples, equity curve, distributions, and so on. It does not execute trades, connect to brokers, place orders, or move money. It is a read-only analytics layer on top of data you already own.</p>
+
+    <h2>Your account and credentials</h2>
+    <p>You are responsible for:</p>
+    <ul>
+      <li>Keeping your Notion account credentials secure.</li>
+      <li>Deciding which Notion pages and databases to grant EdgeVantage access to.</li>
+      <li>Revoking EdgeVantage's access if you stop using the service.</li>
+      <li>The accuracy of the trade data in your Notion journal. EdgeVantage computes metrics from whatever it finds — if the inputs are wrong, the outputs will be too.</li>
+    </ul>
+
+    <h2>Acceptable use</h2>
+    <p>Do not use EdgeVantage to:</p>
+    <ul>
+      <li>Attempt to gain unauthorised access to other users' accounts or data.</li>
+      <li>Probe, scan, or test the service for vulnerabilities without permission.</li>
+      <li>Submit automated traffic at a volume intended to degrade the service for others.</li>
+      <li>Reverse engineer, decompile, or disassemble the service except to the extent permitted by applicable law.</li>
+    </ul>
+
+    <p>Responsible security research is welcome — if you find a vulnerability, please report it privately rather than exploiting it.</p>
+
+    <h2>No warranty</h2>
+    <p>EdgeVantage is provided <strong>as-is and as-available</strong>, without warranties of any kind, express or implied. We do not warrant that the service will be uninterrupted, error-free, secure, or that the metrics computed will be free of defects. Notion's API can change, return incomplete data, rate-limit, or go down — EdgeVantage depends on it and is not responsible for outages that originate upstream.</p>
+
+    <p>You should not rely on EdgeVantage as your sole record of your trading performance. Keep your Notion journal as the source of truth; EdgeVantage is a view on top of it.</p>
+
+    <h2>Limitation of liability</h2>
+    <p>To the maximum extent permitted by law, EdgeVantage and its maintainer are not liable for any indirect, incidental, special, consequential, or punitive damages — including but not limited to loss of profits, trading losses, loss of data, or loss of goodwill — arising from or related to your use of the service, even if advised of the possibility of such damages.</p>
+
+    <p>Nothing in these terms excludes or limits liability that cannot lawfully be excluded or limited, including liability for death or personal injury caused by negligence, or for fraud.</p>
+
+    <h2>Account termination</h2>
+    <p>You can terminate your account at any time by clicking "Delete account" in the dashboard's Settings menu, which immediately erases your record from EdgeVantage's storage.</p>
+
+    <p>We reserve the right to suspend or terminate accounts that violate these terms, attempt to abuse the service, or whose continued operation would put other users at risk. Where practical, we will notify you before doing so.</p>
+
+    <h2>Changes to the service</h2>
+    <p>EdgeVantage is under active development. Features may be added, changed, or removed. If a change materially reduces the functionality you rely on, we will show a notice in the dashboard before it takes effect.</p>
+
+    <h2>Changes to these terms</h2>
+    <p>If these terms change, the "last updated" date above will change. Continued use of EdgeVantage after a change constitutes acceptance of the new terms. If you disagree with a change, delete your account and stop using the service.</p>
+
+    <h2>Governing law</h2>
+    <p>These terms are governed by the laws of England and Wales. Any disputes arising from or related to these terms or your use of EdgeVantage are subject to the exclusive jurisdiction of the courts of England and Wales.</p>
+
+    <h2>Contact</h2>
+    <p>EdgeVantage is maintained by an individual developer as an open-source project. For questions about these terms, raise an issue at <a href="https://github.com/harry528282/EdgeVantage/issues" target="_blank" rel="noopener">github.com/harry528282/EdgeVantage/issues</a>. For security reports, please use a <strong>private</strong> advisory via the repository's Security tab instead of a public issue.</p>
+
+    <a href="onboarding.html" class="back-link">← Back to EdgeVantage</a>
+  </div>
+</div>
+</body>
+</html>
